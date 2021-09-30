@@ -10,5 +10,5 @@ LIST OF CHARTS
 This chart adds a second roxie to a edfault system. It can be used in conjunction with 
 one of the persistent storage charts. 
 ```
-helm upgrade --install mycluster hpcc/ --version=8.2.18 -f examples/local/values-localfile.yaml -f myValues.yaml
+helm upgrade --install mycluster hpcc/ --version=8.2.18 -f examples/local/values-localfile.yaml -f TwoRoxies.yaml
 ```
