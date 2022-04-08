@@ -16,3 +16,7 @@ helm upgrade --install mycluster hpcc/ --version=8.2.18 -f examples/local/values
 
 This chart removes roxie and the roxie-workunit eclagent It can be used in conjunction with 
 one of the persistent storage charts. 
+
+**twothors.yaml**
+
+This chart adds a second Thor cluster with 10 workers.
