@@ -12,3 +12,7 @@ one of the persistent storage charts.
 ```
 helm upgrade --install mycluster hpcc/ --version=8.2.18 -f examples/local/values-localfile.yaml -f TwoRoxies.yaml
 ```
+**noroxie.yaml**
+
+This chart removes roxie and the roxie-workunit eclagent It can be used in conjunction with 
+one of the persistent storage charts. 
