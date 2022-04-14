@@ -1,0 +1,34 @@
+roxie:
+- name: roxie1
+  disabled: false
+  prefix: roxie1
+  services:
+  - name: roxie
+    servicePort: 9876
+    listenQueue: 200
+    numThreads: 30
+    visibility: local
+  replicas: 2  
+  numChannels: 2
+  serverReplicas: 0
+  localAgent: false
+  traceLevel: 1
+  topoServer:
+    replicas: 1
+
+- name: roxie2
+  disabled: false
+  prefix: roxie2
+  services:
+  - name: roxie2
+    servicePort: 9876
+    listenQueue: 200
+    numThreads: 30
+    visibility: local
+  replicas: 2  
+  numChannels: 2
+  serverReplicas: 0
+  localAgent: false
+  traceLevel: 1
+  topoServer:
+    replicas: 1
