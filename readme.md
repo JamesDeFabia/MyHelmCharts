@@ -38,7 +38,7 @@ helm install mylocalfile hpcc/hpcc-localfile --set common.hostpath=/run/desktop/
 helm upgrade --install mycluster hpcc/hpcc -f mystorage.yaml -f twothors.yaml
 ```
 
-** threethorsonelinger.yaml **
+**threethorsonelinger.yaml**
 
 This chart adds a second and third Thor cluster with 10 workers. However, the third one has lingerPeriodset to 30 seconds.  It can be used in conjunction with 
 one of the persistent storage charts. 
