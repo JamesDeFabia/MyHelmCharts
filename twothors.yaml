@@ -9,3 +9,4 @@ thor:
  numWorkers: 10
  maxJobs: 4
  maxGraphs: 2
+ 
