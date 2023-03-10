@@ -5,6 +5,12 @@ They all modify the HPCC/HPCC base chart.
 
 LIST OF CHARTS
 ==============
+**ESP8011.yaml**
+This chart merely changes the ECLWatch Port to 8011. This is useful if you have port forwarding enabled and want access to more than one platform. 
+
+**skinnyesp.yaml**
+This is an override for the ESP component with Ws-SQL and ESDL services removed. This can be a cost saver when you know you are not going to use these services. 
+
 **tworoxies.yaml**
 
 This chart adds a second roxie to a default system. It can be used in conjunction with 
