@@ -59,3 +59,14 @@ helm install mylocalfile hpcc/hpcc-localfile --set common.hostpath=/run/desktop/
 # capture the output from storage: on to mystorage.yaml
 helm upgrade --install mycluster hpcc/hpcc -f mystorage.yaml -f nothor.yaml
 ```
+**thorWithPipe.yaml**
+
+This chart creates a their with some **allowedPipePrograms**. It can be used in conjunction with 
+one of the persistent storage charts. 
+```
+#assumes you have a d drive with the appropriate folders 
+helm install mylocalfile hpcc/hpcc-localfile --set common.hostpath=/run/desktop/mnt/host/d/hpccdata 
+# capture the output from storage: on to mystorage.yaml
+helm upgrade --install mycluster hpcc/hpcc -f mystorage.yaml -f thorWithPipe.yaml
+```
+
