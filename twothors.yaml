@@ -1,0 +1,12 @@
+thor:
+- name: thor
+ prefix: thor
+ numWorkers: 2
+ maxJobs: 4
+ maxGraphs: 2
+- name: thor10
+ prefix: thor10
+ numWorkers: 10
+ maxJobs: 4
+ maxGraphs: 2
+ 

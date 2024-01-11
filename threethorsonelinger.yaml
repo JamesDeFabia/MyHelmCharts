@@ -1,0 +1,35 @@
+thor:
+- name: thor
+  prefix: thor
+  numWorkers: 2
+  maxJobs: 4
+  maxGraphs: 2
+  #managerResources:
+  #  cpu: "1"
+  #  memory: "2G"
+  #workerResources:
+  #  cpu: "4"
+  #  memory: "4G"
+  #workerMemory:
+  #  query: "3G"
+  #  thirdParty: "500M"
+- name: thor10
+  prefix: thor10
+  numWorkers: 10
+  maxJobs: 20
+  maxGraphs: 2
+  #managerResources:
+  #  cpu: "1"
+  #  memory: "2G"
+  #workerResources:
+  #  cpu: "4"
+  #  memory: "4G"
+  #workerMemory:
+  #  query: "3G"
+  #  thirdParty: "500M"
+- name: thor10linger
+  prefix: thor10linger
+  numWorkers: 10
+  maxJobs: 20
+  maxGraphs: 2
+  lingerPeriod: 30
