@@ -1,0 +1,22 @@
+thor:
+- name: thor400-az1
+  auxQueues: [ thor400-azs ]
+  maxGraphs: 1
+  maxJobs: 2
+  numWorkers: 400
+  numWorkersPerPod: 25
+  prefix: thor400
+- name: thor400-az2
+  maxGraphs: 1
+  maxJobs: 2
+  numWorkers: 400
+  numWorkersPerPod: 25
+  prefix: thor400
+  auxQueues: [ thor400-azs ]
+- name: thor400-az3
+  maxGraphs: 1
+  maxJobs: 2
+  numWorkers: 400
+  numWorkersPerPod: 25
+  prefix: thor400
+  auxQueues: [ thor400-azs ]
