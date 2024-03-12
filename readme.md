@@ -61,12 +61,17 @@ helm upgrade --install mycluster hpcc/hpcc -f mystorage.yaml -f nothor.yaml
 ```
 **thorWithPipe.yaml**
 
-This chart creates a their with some **allowedPipePrograms**. It can be used in conjunction with 
+This chart creates a Thor with some **allowedPipePrograms**. It can be used in conjunction with 
 one of the persistent storage charts. 
 ```
 #assumes you have a d drive with the appropriate folders 
 helm install mylocalfile hpcc/hpcc-localfile --set common.hostpath=/run/desktop/mnt/host/d/hpccdata 
 # capture the output from storage: on to mystorage.yaml
 helm upgrade --install mycluster hpcc/hpcc -f mystorage.yaml -f thorWithPipe.yaml
+```
+**threethorsonequeue.yaml**
+
+This chart creates three Thors that listen to a common queue (in addition to their own queue). This provides the ability to define distinct Thor cluster configurations but allows them to form a single target behind a single queue. These clusters can be bound to certain node pools in different availability zones if desired. This is accomplished by defining additional auxiliary target queues for each Thor definition and using a common name as an auxiliary queue.
+
 ```
 
